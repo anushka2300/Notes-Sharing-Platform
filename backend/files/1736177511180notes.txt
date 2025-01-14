@@ -1,0 +1,6 @@
+notes
+
+1. underscore can occur in double type between 2 digits
+2. constructor dont have return type
+3.)19 doubt
+5.)10,14,15

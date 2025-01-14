@@ -1,0 +1,65 @@
+.branch-card {
+    background: linear-gradient(145deg, #1e222a, #0f1216);
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    width: 200px;  
+    height: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .branch-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .branch-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #61dafb;
+  }
+  
+  .branch-card p {
+    font-size: 0.9rem;
+    color: #d1d5db;
+    margin: 10px 0 20px;
+  }
+  
+  .details-btn,
+  .join-btn {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    
+  }
+  
+  .details-btn {
+    background-color: #30363d;
+    color: #61dafb;
+  }
+  
+  .details-btn:hover {
+    background-color: #61dafb;
+    color: #0d1117;
+  }
+  
+  .join-btn {
+    background-color: #61dafb;
+    color: #0d1117;
+  }
+  
+  .join-btn:hover {
+    background-color: #ffffff;
+    color: #61dafb;
+  }
+  

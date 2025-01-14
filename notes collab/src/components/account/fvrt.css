@@ -1,0 +1,53 @@
+ .favourites-container {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .pdf-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .pdf-card {
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+     width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+  }
+  
+  .pdf-card h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .pdf-card p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  iframe {
+    border-radius: 8px;
+  }
+  
+  .pdf-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+  }
+  

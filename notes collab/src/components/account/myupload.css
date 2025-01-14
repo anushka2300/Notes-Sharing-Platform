@@ -1,0 +1,63 @@
+
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #f9f9f9;
+    
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    color:black;
+  }
+   
+  .branch {
+    margin: 0 0 10px;
+    
+     
+  }
+ 
+  .link {
+    color: #d01717;
+    font-weight: 300;
+    text-decoration: underline;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+   
+  .no-uploads {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+  }
+  
+  .remove{
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 6px;
+
+  }

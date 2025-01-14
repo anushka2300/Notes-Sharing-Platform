@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #ffffff;
+  }
+  
+  .app {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+    margin-top: 80px;
+    font-family:Papyrus;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    color: #61dafb;
+  }
+  
+  .branch-container {
+     display: flex;
+     gap: 30px;
+     flex-wrap: wrap;
+     justify-content: center;
+  }
+  

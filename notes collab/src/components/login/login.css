@@ -1,0 +1,101 @@
+/* Overall Container */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #1e222a, #0f1216);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Box Styling */
+  .auth-box {
+    background: #c1c1c2;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .auth-box h2 {
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  /* Input Group Styling */
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color:#30363d;
+  }
+  
+  /* Button Styling */
+  .auth-btn {
+    background-color: #30363d;
+    color: #cccccc;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .auth-btn:hover {
+    background-color: #4b5867;
+    
+    font-weight:600;
+    font-size: 16px;
+  }
+  
+  /* Toggle Text */
+  .toggle-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555555;
+  }
+  
+  .toggle-text span {
+    color: #30363d;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+  }
+  
+ 
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .auth-box {
+      padding: 20px 30px;
+    }
+    .auth-box h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

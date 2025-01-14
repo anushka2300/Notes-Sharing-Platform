@@ -1,0 +1,63 @@
+/* General container styling */
+.branch-subjects-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    background: linear-gradient(145deg, #1e222a, #0f1216);
+    border: 1px solid #30363d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+  }
+  
+  .branch-subjects-container h1 {
+    font-size: 2rem;
+    color: #c1c1c2; 
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: capitalize; 
+  }
+  
+   
+  .subjects-grid {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .subject-card {
+    background-color: #c1c1c2;  
+    color: #2b2d42; 
+    border: 1px solid #ddd;  
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    cursor: pointer; 
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .subject-card:hover {
+    background-color: #2b2d42;  
+    color: #61dafb;
+    
+  }
+   
+  @media (max-width: 480px) {
+    .branch-subjects-container {
+      padding: 15px;
+    }
+  
+    .branch-subjects-container h1 {
+      font-size: 1.6rem;
+    }
+  
+    .subject-card {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  }
+  
