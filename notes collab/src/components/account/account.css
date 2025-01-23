@@ -1,71 +1,75 @@
 .sidebar {
-    width: 250px;
-    background-color: #1e222a;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    position: fixed;
-    height: calc(100% - 60px);
-    top: 0;
-    left: 0;
-    overflow: hidden;
-  }
-  .head{
-    margin-top: 70px;
-  }
-  
-  .sidebar .profile{
-    margin-top: 60px;
-  }
+  width: 250px;
+  background-color: #1e222a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
 
-  .sidebar .profile h2 {
-    font-size: 1.2rem;
-    
-  }
-  
-  .sidebar .profile p {
-    font-size: 0.9rem;
-    color: #ccc;
-  }
-  
-  .sidebar .menu {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .sidebar .menu li {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  
-  .sidebar .menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .sidebar .menu a:hover {
-    background-color: #575757;
-  }
-  
-   
-  .main-content {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-    margin-left: 20%;
-  }
- 
+.head {
+  margin-top: 50px;
+}
+
+.sidebar .profile {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.sidebar .profile h2 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.sidebar .profile p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.sidebar .menu li {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.sidebar .menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .menu a:hover {
+  background-color: #575757;
+}
+
+.main-content {
+  margin-left: 270px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
 .notes-container {
-   
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #f9f9f9;
@@ -74,76 +78,104 @@
 
 .notes-title {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: bold;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .notes-description {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .box {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 label {
   font-size: 1rem;
   color: #333;
-  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
 textarea,
-input[type="file"] {
-  padding: 10px;
-  margin-right: 20px;
+input[type="file"],
+select {
+  padding: 12px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 100%;
-  color:black;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.branch,.subject{
-  padding: 10px;
-  margin-right: 20px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 90%;
+#file,#title,#description{
+  width:97%;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
 }
 
 .submit-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  color:#f9f9f9;
-  background-color:#30363d;;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #f9f9f9;
+  background-color: #30363d;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   align-self: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.icon{
+  font-size: 20px;
 }
 
 .submit-button:hover {
   background-color: #61dafb;
-    color: #30363d;
+  color: #30363d;
 }
 
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: #61dafb;
-  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+@media (max-width: 768px) {
+  .main-content {
+      margin-left: 0;
+      padding: 10px;
+  }
+
+  .sidebar {
+      width: 200px;
+      padding: 15px;
+  }
+
+  .notes-container {
+      margin: 20px;
+      padding: 15px;
+  }
+
+  .notes-title {
+      font-size: 1.5rem;
+  }
+
+  .notes-description {
+      font-size: 1rem;
+  }
 }
- 
